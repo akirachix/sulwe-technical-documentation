@@ -1,0 +1,69 @@
+site_name: UMUCYO Documentation
+site_url: "https://akirachix.github.io/sulwe-technical-documentation/"
+repo_url: https://github.com/akirachix/sulwe-technical-documentation
+
+theme:
+  name: material
+  logo: assets/brand/logo.png
+  favicon: assets/brand/logo.png
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Overview: overview.md
+  - Getting Started: getting-started.md
+  - Architecture: architecture.md
+  - Features:
+      - features/index.md
+      - User Registration and Accounts: features/registration.md
+      - Collection Points: features/collection-points.md
+      - Weighing Devices: features/weighing-devices.md
+      - Produce Records: features/produce-records.md
+      - SMS Notifications: features/sms-notifications.md
+      - Tea Pricing: features/tea-pricing.md
+      - Tasks Management: features/tasks.md
+      - Payments: features/payments.md
+      - USSD Reporting: features/ussd.md
+  - Backend: backend.md
+  - API Reference: api.md
+  - Database: database.md
+  - Configuration: configuration.md
+  - Frontend:
+      - Admin Dashboard: frontend-dashboard.md
+      - Agent App (PWA): frontend-PWA.md
+  - Security: security.md
+  - Testing and QA: testing.md
+  - Deployment: deployment.md
+  - Glossary: glossary.md
