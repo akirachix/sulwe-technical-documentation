@@ -21,7 +21,7 @@ The documentation explains how each feature works, how the parts of the system f
 - Payments, which pay farmers every month through M-Pesa.
 - USSD reporting, which gives farmers access to their information from basic phones in English and Kinyarwanda.
 
-It also covers the technology used, the project's code conventions, the main database tables, the API endpoints, the configuration settings, local setup, testing, deployment and security.
+It also covers the technology used, the project's code conventions, the main database tables, the API endpoints, the configuration settings, local setup, testing, deployment, security, and the known issues still to be resolved.
 
 ## Who it is for
 

@@ -1,118 +1,69 @@
-site_name: Umucyo Documentation
-site_description: Technical documentation for Umucyo, the tea cooperative management platform.
-site_url: https://akirachix.github.io/sulwe-technical-documentation/
+site_name: UMUCYO Documentation
+site_url: "https://akirachix.github.io/sulwe-technical-documentation/"
 repo_url: https://github.com/akirachix/sulwe-technical-documentation
-repo_name: akirachix/sulwe-technical-documentation
-edit_uri: edit/main/docs/
-copyright: Copyright &copy; 2026 Sulwe Group. All rights reserved.
 
 theme:
   name: material
-  logo: assets/brand/image (1).png
-  favicon: assets/brand/image (1).png
-  font:
-    text: Inter
-    code: JetBrains Mono
-  icon:
-    repo: fontawesome/brands/github
-    edit: material/pencil
+  logo: assets/brand/logo.png
+  favicon: assets/brand/logo.png
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
+    - scheme: default
       primary: custom
       accent: custom
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: custom
-      accent: custom
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to light mode
   features:
-    - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.sections
     - navigation.indexes
     - navigation.top
-    - navigation.footer
-    - navigation.instant
-    - navigation.tracking
     - toc.follow
     - search.suggest
     - search.highlight
-    - search.share
     - content.code.copy
-    - content.code.annotate
-    - content.tabs.link
 
 extra_css:
   - stylesheets/extra.css
 
 markdown_extensions:
-  - abbr
   - admonition
   - attr_list
-  - def_list
   - md_in_html
   - tables
   - toc:
-      permalink: false
+      permalink: true
   - pymdownx.details
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.snippets
+  - pymdownx.highlight
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
   - search
 
 nav:
   - Home: index.md
-  - Getting Started:
-      - Overview: overview.md
-      - Local setup: getting-started.md
+  - Overview: overview.md
+  - Getting Started: getting-started.md
+  - Architecture: architecture.md
   - Features:
-      - Overview: features/index.md
+      - features/index.md
       - User Registration and Accounts: features/registration.md
       - Collection Points: features/collection-points.md
       - Weighing Devices: features/weighing-devices.md
       - Produce Records: features/produce-records.md
-      - Tea Pricing: features/tea-pricing.md
       - SMS Notifications: features/sms-notifications.md
+      - Tea Pricing: features/tea-pricing.md
+      - Tasks Management: features/tasks.md
       - Payments: features/payments.md
       - USSD Reporting: features/ussd.md
-      - Tasks Management: features/tasks.md
-  - Development:
-      - Architecture: architecture.md
-      - Data models: https://docs.google.com/document/d/1lkgwbTZw3tpfgw-ZdRMbaPtkxpEZZYwmETebNp41ovc/edit?usp=sharing
-      - Backend: backend.md
-      - API Reference: api.md
-      - Database: database.md
-      - Configuration: configuration.md
+  - Backend: backend.md
+  - API Reference: api.md
+  - Database: database.md
+  - Configuration: configuration.md
+  - Frontend:
       - Admin Dashboard: frontend-dashboard.md
       - Agent App (PWA): frontend-PWA.md
-      - Design System: design.md
-      - Security: security.md
-      - Testing and QA: testing.md
-      - Deployment: deployment.md
-      - Glossary: glossary.md
-
-extra:
-  generator: false
+  - Security: security.md
+  - Testing and QA: testing.md
+  - Deployment: deployment.md
+  - Glossary: glossary.md
