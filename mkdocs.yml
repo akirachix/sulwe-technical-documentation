@@ -8,8 +8,8 @@ copyright: Copyright &copy; 2026 Sulwe Group. All rights reserved.
 
 theme:
   name: material
-  logo: assets/brand/image (1).png
-  favicon: assets/brand/image (1).png
+  logo: assets/brand/logo.png
+  favicon: assets/brand/logo.png
   font:
     text: Inter
     code: JetBrains Mono
