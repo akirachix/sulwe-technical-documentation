@@ -1,0 +1,20 @@
+/* Design System page — image presentation */
+.md-typeset img {
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .06), 0 4px 16px rgba(0, 0, 0, .06);
+}
+
+/* Every screenshot on the Design System page links to its full-size file,
+   which the lightbox plugin opens in an overlay. */
+.md-typeset a[href$=".png"] img {
+  cursor: zoom-in;
+}
+
+/* Keep long screenshots from taking the whole viewport before they are clicked. */
+.md-typeset p:has(> a[href$=".png"]) img {
+  max-height: 520px;
+  width: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}

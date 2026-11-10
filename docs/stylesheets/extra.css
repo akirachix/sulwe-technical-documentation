@@ -1,0 +1,188 @@
+
+:root > * {
+  --umucyo-green: #124621;
+  --umucyo-green-mid: #2d6a3e;
+  --umucyo-lime: #9ccc4e;
+  --umucyo-leaf-tint: #eff6de;
+}
+
+[data-md-color-scheme="default"] {
+  --md-footer-bg-color: #124621;
+  --md-footer-bg-color--dark: #0b2e15;
+  --md-primary-fg-color: #124621;
+  --md-primary-fg-color--light: #2d6a3e;
+  --md-primary-fg-color--dark: #0b2e15;
+  --md-primary-bg-color: #ffffff;
+  --md-accent-fg-color: #5f8f1f;
+  --md-accent-fg-color--transparent: rgba(156, 204, 74, 0.15);
+  --md-typeset-a-color: #2d6a3e;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-hue: 140;
+  --md-footer-bg-color: #0f2a18;
+  --md-footer-bg-color--dark: #0a1f11;
+  --md-primary-fg-color: #163b22;
+  --md-primary-fg-color--light: #2d6a3e;
+  --md-primary-fg-color--dark: #0b2e15;
+  --md-primary-bg-color: #ffffff;
+  --md-accent-fg-color: #9ccc4e;
+  --md-accent-fg-color--transparent: rgba(156, 204, 74, 0.15);
+  --md-typeset-a-color: #9ccc4e;
+  --md-default-bg-color: #111a14;
+  --umucyo-leaf-tint: rgba(156, 204, 74, 0.08);
+}
+
+.md-typeset {
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+
+.md-typeset h1 {
+  font-weight: 700;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset h2 {
+  font-weight: 650;
+  margin-top: 2em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-header {
+  min-height: 7rem;
+}
+
+.md-header .md-logo img,
+.md-header .md-logo svg {
+  height: 6rem;
+  width: auto;
+}
+.umucyo-hero {
+  margin: 0 0 2rem;
+  padding: 2.5rem 2rem;
+  border-radius: 0.8rem;
+  background: linear-gradient(135deg, var(--umucyo-green) 0%, var(--umucyo-green-mid) 100%);
+  color: #ffffff;
+}
+
+.umucyo-hero h1 {
+  margin: 0 0 0.5rem;
+  color: #ffffff;
+  font-size: 2.2rem;
+}
+
+.umucyo-hero p {
+  max-width: 40rem;
+  margin: 0 0 1.5rem;
+  font-size: 0.95rem;
+  opacity: 0.92;
+}
+
+.umucyo-hero .md-button {
+  margin: 0 0.5rem 0.5rem 0;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.umucyo-hero .md-button--primary {
+  background-color: var(--umucyo-lime);
+  border-color: var(--umucyo-lime);
+  color: #0b2e15;
+}
+
+.umucyo-hero .md-button:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: var(--umucyo-green);
+}
+
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid > .card {
+  border-radius: 0.6rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid > .card:hover {
+  transform: translateY(-2px);
+  border-color: var(--md-accent-fg-color);
+  box-shadow: 0 6px 18px rgba(18, 70, 33, 0.12);
+}
+
+.md-typeset .grid.cards .twemoji,
+.md-typeset .grid.cards svg {
+  color: var(--md-primary-fg-color--light);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards .twemoji,
+[data-md-color-scheme="slate"] .md-typeset .grid.cards svg {
+  color: var(--umucyo-lime);
+}
+
+.md-typeset table:not([class]) {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  font-size: 0.75rem;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--umucyo-green);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.md-typeset table:not([class]) tr:nth-child(even) td {
+  background-color: var(--umucyo-leaf-tint);
+}
+
+.md-typeset .at-a-glance {
+  padding: 1rem 1.2rem;
+  margin: 1rem 0 1.5rem;
+  border-left: 4px solid var(--umucyo-lime);
+  border-radius: 0.4rem;
+  background-color: var(--umucyo-leaf-tint);
+}
+
+.md-typeset .at-a-glance p:last-child {
+  margin-bottom: 0;
+}
+.md-typeset ol > li::marker {
+  font-weight: 700;
+  color: var(--md-primary-fg-color--light);
+}
+
+[data-md-color-scheme="slate"] .md-typeset ol > li::marker {
+  color: var(--umucyo-lime);
+}
+
+@media screen and (max-width: 44.9375em) {
+  .umucyo-hero {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .umucyo-hero h1 {
+    font-size: 1.6rem;
+  }
+}
+
+.md-footer {
+  color: #ffffff;
+}
+
+.md-footer-meta {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.md-typeset .mermaid {
+  margin: 1.5em 0;
+  text-align: center;
+}
+.md-header__title .md-header__topic:first-child {
+  visibility: hidden;
+}
+
+.md-header__title .md-header__topic:first-child {
+  visibility: hidden;
+}
